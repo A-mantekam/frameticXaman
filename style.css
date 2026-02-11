@@ -242,7 +242,12 @@ span{
         padding: 1rem;
     }
 }
-
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
 
 .social-icons a{
     display: inline-flex;
@@ -281,6 +286,9 @@ span{
         height: 3rem;
         font-size: 1.2rem;
         margin: 1.5rem 0.8rem 1.5rem 0;
+        align-items: center;
+        justify-content: center;
+         display: flex;
     }
 }
 
@@ -664,8 +672,11 @@ span{
 
 .follow-title {
     font-size: 2.2rem;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    
+    /* margin-top: 40px;
+    margin-bottom: 20px; */
 }
 
 .social-icons i {
@@ -676,6 +687,11 @@ span{
     margin-right: 15px;
     cursor: pointer;
     transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+;
 }
 
 .social-icons i:hover {
