@@ -22,6 +22,11 @@ body{
     color: white;
 }
 
+.topheader-logo{
+    border-radius: 100%;
+}
+
+
 .navbar{
     background-color: black;
     filter: drop-shadow(10px);
@@ -70,6 +75,26 @@ header{
     object-fit: cover;
     margin-right: 1rem;
     
+}
+
+.navbar-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.profile-name{
+    font-size: 1.2rem;
+    color: #b74b4b;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.topheader-logo{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: block;
 }
 
 nav a{
