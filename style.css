@@ -125,23 +125,42 @@ nav a.active{
         padding: 1rem solid;
         background-color: #161616;
         border-top: 0.1rem solid rgba(0,0,0,0.1);
+        z-index: 50;
+        max-height: 90vh;
+        overflow-y: auto;
     }
 
     nav.active{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     nav a{
         display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+        font-size: 1.6rem;
+        margin: 1.5rem 1rem;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: none;
     }
 
     nav a:hover,
     nav a.active{
-        padding: 1rem;
+        padding: 0.8rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
+        border-left: 3px solid #b74b4b;
+        border-bottom: none;
+    }
+}
+
+@media(max-width:600px){
+    nav{
+        width: 60%;
+    }
+
+    nav a{
+        font-size: 1.4rem;
+        margin: 1rem 0.8rem;
     }
 }
 
@@ -208,7 +227,20 @@ span{
      text-align: center;
     font-size: 2.5rem;
     padding: 2.5rem;
-    
+}
+
+@media(max-width: 768px) {
+    .section-sub-title {
+        font-size: 1.8rem;
+        padding: 1.5rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .section-sub-title {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
 }
 
 
@@ -232,6 +264,24 @@ span{
     transform: scale(1.3) translateY(-5px);
     background-color: #b74b4b;
     box-shadow: 0  0 25px #b74b4b;
+}
+
+@media(max-width: 768px) {
+    .social-icons a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        margin: 2rem 1rem 2rem 0;
+    }
+}
+
+@media(max-width: 480px) {
+    .social-icons a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        margin: 1.5rem 0.8rem 1.5rem 0;
+    }
 }
 
 .btn{
@@ -263,7 +313,7 @@ span{
 
 
 .typing-text{
-    font-size: 34px;
+    font-size: 2.2rem;
     font-weight: 600;
     min-width: 280px;
 }
@@ -767,4 +817,309 @@ body {
     font-size: 1.7rem;
     color: #9aa4b2;
     line-height: 1.6;
+}
+
+/* ========== COMPREHENSIVE MOBILE RESPONSIVE ========== */
+
+/* Extra Small Devices (320px - 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    section {
+        padding: 3rem 5% 3rem;
+    }
+
+    /* Header */
+    header {
+        padding: 0.8rem 5%;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .logoimage {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.5rem;
+    }
+
+    .navbar-profile {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+
+    .profile-name {
+        font-size: 0.9rem;
+    }
+
+    /* Home Section */
+    .home {
+        gap: 2rem;
+        margin: 3rem 2rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .home-content p {
+        font-size: 1.3rem;
+    }
+
+    .home-img img {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .social-icons a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 2rem 1rem 2rem 0;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* Projects */
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .section-sub-title {
+        font-size: 1.8rem;
+        padding: 1.5rem;
+    }
+
+    .project-card.reel {
+        width: 100%;
+    }
+
+    .project-card.youtube {
+        width: 100%;
+    }
+
+    /* Pricing */
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .contact-form textarea {
+        height: 120px;
+    }
+
+    .send-btn {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+    /* Stats */
+    .stats-heading {
+        font-size: 2rem;
+    }
+
+    .stats-container {
+        gap: 2rem;
+    }
+
+    .stat-box {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    /* Availability */
+    .availability {
+        padding: 1.5rem;
+    }
+
+    .availability h4 {
+        font-size: 1.5rem;
+    }
+
+    .availability p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small Devices / Tablets (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 4rem 7% 4rem;
+    }
+
+    header {
+        padding: 1rem 7%;
+    }
+
+    .logo {
+        font-size: 2.3rem;
+    }
+
+    .logoimage {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    /* Home */
+    .home {
+        gap: 3rem;
+        margin: 4rem 3rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    /* Projects Grid */
+    .project-card.reel {
+        width: 45%;
+    }
+
+    .project-card.youtube {
+        width: 100%;
+    }
+
+    .reels-row {
+        gap: 1.5rem;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 5rem 7%;
+    }
+
+    .contact-title {
+        font-size: 3.5rem;
+    }
+
+    .contact-container {
+        gap: 4rem;
+    }
+
+    .contact-form {
+        min-width: 100%;
+    }
+
+    .contact-info {
+        min-width: 100%;
+    }
+
+    /* Pricing */
+    .pricing {
+        padding: 5rem 7%;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .plan-box {
+        width: 90%;
+    }
+
+    /* Stats */
+    .stats-container {
+        gap: 2rem;
+    }
+
+    .stat-box {
+        width: 45%;
+        padding: 2rem;
+    }
+}
+
+/* Medium Devices (769px - 1000px) */
+@media (max-width: 1000px) and (min-width: 769px) {
+    html {
+        font-size: 58%;
+    }
+
+    section {
+        padding: 4rem 8% 4rem;
+    }
+
+    header {
+        padding: 1rem 8%;
+    }
+
+    .home {
+        gap: 3rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-img img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .project-card.reel {
+        width: 22%;
+    }
+
+    .project-card.youtube {
+        width: 48%;
+    }
+
+    .plan-box {
+        width: 300px;
+    }
+
+    .stat-box {
+        width: 30%;
+    }
+
+    .contact-container {
+        gap: 5rem;
+    }
+}
+
+/* Large Devices & Up (1001px+) */
+@media (min-width: 1001px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .project-card.reel {
+        width: 18%;
+    }
+
+    .project-card.youtube {
+        width: 32%;
+    }
 }
